@@ -11,6 +11,7 @@ import {
   Route,
   useRoutes,
 } from "react-router-dom";
+import Success from "./pages/Success.jsx";
 
 const App = () => {
   const user = true;
@@ -32,6 +33,7 @@ const PrivateRoute1 = () => {
         <Route path="/products/:category" element={<ProductList />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/success" element={<Success />} />
         <Route path="/login" element={<PrivateRoute />} />
         <Route path="/register" element={<PrivateRoute1 />} />
       </Routes>
