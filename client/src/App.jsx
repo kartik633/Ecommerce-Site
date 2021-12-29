@@ -27,6 +27,7 @@ const PrivateRoute1 = () => {
   return user ? <Navigate to="/" /> : <Register />;
 }
 
+
   return (
     <Router>
       <Routes>
